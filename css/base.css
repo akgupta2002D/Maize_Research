@@ -1,0 +1,42 @@
+/* base.css */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}

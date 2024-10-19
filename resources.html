@@ -2,22 +2,141 @@
 <html lang="en">
 
 <head>
-    <!-- (Include head content as in index.html) -->
+    <meta charset="UTF-8">
+    <title>Research Webpage - Resources</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <!-- (Include header and navigation as in index.html) -->
+
+    <header>
+        <h1>Plant Biology Research (Chatterjee Lab) - Resources</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="links.html">Links</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <main>
         <section>
-            <h2>Resources</h2>
+            <h2>Finding Localizing Amino Acid Sequences in Proteins</h2>
+            <p>Below are the resources and tools used for identifying localizing amino acid sequences in proteins.</p>
+
+            <h3>Protein Localization Tools</h3>
             <ul>
-                <li><a href="#">Research Paper 1</a></li>
-                <li><a href="#">Research Paper 2</a></li>
-                <!-- Add more resources -->
+                <li>
+                    <strong>MaizeGDB</strong> - The Maize Genetics and Genomics Database. Use this to search for genes
+                    and find protein sequences.
+                    <br>
+                    <a href="https://www.maizegdb.org/" target="_blank">https://www.maizegdb.org/</a>
+                </li>
+                <li>
+                    <strong>NLS Mapper</strong> - Predicts nuclear localization signals in proteins.
+                    <br>
+                    <a href="https://nls-mapper.iab.keio.ac.jp/cgi-bin/NLS_Mapper_form.cgi"
+                        target="_blank">https://nls-mapper.iab.keio.ac.jp/cgi-bin/NLS_Mapper_form.cgi</a>
+                </li>
+                <li>
+                    <strong>NoLS (Dundee)</strong> - Identifies nucleolar localization signals.
+                    <br>
+                    <a href="https://www.compbio.dundee.ac.uk/www-nod/"
+                        target="_blank">https://www.compbio.dundee.ac.uk/www-nod/</a>
+                </li>
+                <li>
+                    <strong>TargetP-2.0</strong> - Predicts subcellular localization of proteins, specifically for
+                    plants.
+                    <br>
+                    <a href="https://services.healthtech.dtu.dk/service.php?TargetP-2.0"
+                        target="_blank">https://services.healthtech.dtu.dk/service.php?TargetP-2.0</a>
+                </li>
+                <li>
+                    <strong>DeepMito</strong> - Predicts mitochondrial localization signals in proteins.
+                    <br>
+                    <a href="https://busca.biocomp.unibo.it/deepmito/"
+                        target="_blank">https://busca.biocomp.unibo.it/deepmito/</a>
+                </li>
             </ul>
+
+            <h3>Gene IDs</h3>
+            <p>Use the following gene IDs to search for the corresponding proteins on MaizeGDB:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gene ID (Version 4)</th>
+                        <th>MaizeGDB Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zm00001d010572</td>
+                        <td><a href="https://www.maizegdb.org/gene_center/gene/Zm00001d010572" target="_blank">View on
+                                MaizeGDB</a></td>
+                    </tr>
+                    <tr>
+                        <td>Zm00001d006884</td>
+                        <td><a href="https://www.maizegdb.org/gene_center/gene/Zm00001d006884" target="_blank">View on
+                                MaizeGDB</a></td>
+                    </tr>
+                    <tr>
+                        <td>Zm00001d017252</td>
+                        <td><a href="https://www.maizegdb.org/gene_center/gene/Zm00001d017252" target="_blank">View on
+                                MaizeGDB</a></td>
+                    </tr>
+                    <!-- Add additional gene IDs in the same format -->
+                    <!-- ... -->
+                    <tr>
+                        <td>Zm00001d035509</td>
+                        <td><a href="https://www.maizegdb.org/gene_center/gene/Zm00001d035509" target="_blank">View on
+                                MaizeGDB</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Instructions</h3>
+            <ol>
+                <li>
+                    Use the gene ID to search for the gene on <a href="https://www.maizegdb.org/"
+                        target="_blank">MaizeGDB</a>.
+                    <ul>
+                        <li>Note: Version 4 IDs start with 'Zm' and have a 'd' in the middle. Prefer using V4 IDs as
+                            they are more up-to-date.</li>
+                    </ul>
+                </li>
+                <li>
+                    Find the protein sequence of the canonical transcript.
+                    <ul>
+                        <li>Select the protein made by the canonical transcript (not always T001).</li>
+                    </ul>
+                </li>
+                <li>
+                    Use the protein sequence in the following prediction software:
+                    <ul>
+                        <li><a href="https://nls-mapper.iab.keio.ac.jp/cgi-bin/NLS_Mapper_form.cgi" target="_blank">NLS
+                                Mapper</a> - For nuclear localization signals.</li>
+                        <li><a href="https://www.compbio.dundee.ac.uk/www-nod/" target="_blank">NoLS Dundee</a> - For
+                            nucleolar localization signals.</li>
+                        <li><a href="https://services.healthtech.dtu.dk/service.php?TargetP-2.0"
+                                target="_blank">TargetP-2.0</a> - For general localization (select 'plants').</li>
+                        <li><a href="https://busca.biocomp.unibo.it/deepmito/" target="_blank">DeepMito</a> - For
+                            mitochondrial localization signals.</li>
+                    </ul>
+                </li>
+                <li>
+                    Save the results and include them in your report.
+                    <ul>
+                        <li>You can create a table summarizing the findings and include screenshots or images of the
+                            results.</li>
+                    </ul>
+                </li>
+            </ol>
         </section>
     </main>
-    <!-- (Include footer as in index.html) -->
+    <footer>
+        &copy; 2024 Research Team
+    </footer>
 </body>
 
 </html>
